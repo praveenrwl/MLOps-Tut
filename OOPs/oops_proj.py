@@ -20,9 +20,9 @@ class chatbot:
         elif user_input == '2':
             self.signin()
         elif user_input == '3':
-            pass
+            self.my_post()
         elif user_input == '4':
-            pass
+            self.send_msg()
         else:
             exit()
          
@@ -52,5 +52,21 @@ class chatbot:
             print('\n')
             self.menu()
 
+    # Method
+    def my_post(self):
+        if self.loggedin == True:
+            txt = input('Enter your message here: ')
+            print(f'Your following content is posted -> {txt} ')
+        else:
+            print("You need to sign in first")
 
+    def send_msg(self):
+        if self.loggedin == True:
+            txt = input('Enter your message here: ')
+            name = input('Whom do you want to message: ')
+            print(f'Your following message is sent to {name} -> {txt} ')
+        else:
+            print("You need to sign in first")
+
+# Object
 obj = chatbot()
