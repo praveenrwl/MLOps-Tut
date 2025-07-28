@@ -2,8 +2,8 @@ class chatbot:
     def __init__(self):
         self.username = ''
         self.password = ''
-        self.login = False
-        self.menu()
+        self.loggedin = False
+        # self.menu()
 
     def menu(self):
         user_input = input('''Welcome to Chatbot !! How would you like to proceed?
@@ -24,6 +24,7 @@ class chatbot:
         elif user_input == '4':
             self.send_msg()
         else:
+            print('Exiting...')
             exit()
          
 # obj = chatbot()
@@ -61,12 +62,13 @@ class chatbot:
             print("You need to sign in first")
 
     def send_msg(self):
-        if self.loggedin == True:
+        if self.loggedin:
             txt = input('Enter your message here: ')
             name = input('Whom do you want to message: ')
             print(f'Your following message is sent to {name} -> {txt} ')
         else:
             print("You need to sign in first")
+        self.menu()
 
 # Object
 obj = chatbot()

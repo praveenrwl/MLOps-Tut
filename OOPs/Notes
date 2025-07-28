@@ -13,6 +13,11 @@
 
 
 5. End to End Project (Chatbot Class)
+    > function vs method
+    > magic method or dunder method
+    > self
+    > You can create attribute outside class as well
+
     > Encapsulation
     > Getter and Setter
     > Static Method
