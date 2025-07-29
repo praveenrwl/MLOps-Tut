@@ -1,9 +1,39 @@
 class chatbot:
+
+    __user_id = 0
+
     def __init__(self):
+        # To hide any attribute or to perform any encapsulation - to hide any attribute from normal user
+        self.__name = 'Default Hide User'
+
+        self.id = chatbot.__user_id     #Access by class > to access static value
+        chatbot.__user_id += 1
+
+        # self.user_id = 0
+        # self.user_id += 1
+        # self.name = 'Default User'
         self.username = ''
         self.password = ''
         self.loggedin = False
         # self.menu()
+
+
+# Static value
+    @staticmethod
+    # Reason we are not giving self is because it doesnt need to access object
+    def get_id():
+        return chatbot.__user_id
+
+    @staticmethod
+    def set_id(value):
+        chatbot.__user_id = value
+
+    def get_name(self):
+        return self.__name
+
+    def set_name(self, value):
+        self.__name = value
+    
 
     def menu(self):
         user_input = input('''Welcome to Chatbot !! How would you like to proceed?
