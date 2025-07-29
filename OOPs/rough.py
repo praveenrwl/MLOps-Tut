@@ -15,9 +15,9 @@ from oops_proj import chatbot
 user1 = chatbot()
 print(user1.id)
 
+# Using static method directly from class rather than object
 chatbot.set_id(10)
-user2 = chatbot()
-print(user2.id)
+
 
 # user2 = chatbot()
 # print(user2.id)

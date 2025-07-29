@@ -3,7 +3,7 @@
     > Code Walkthrough
     > Attributes get called itself, methods are called manually
 
-3. My python is called OOP? - everything in python is an object (data structure, data type etc)
+3. Why python is called OOP? - everything in python is an object (data structure, data type etc)
 4. Advantages of OOPs:
     > You can create your own data type
     > a + b
@@ -22,3 +22,12 @@
     > Getter and Setter
     > Static Method
     > Inheritance
+
+6. Inheritance
+    > Inheritance code example
+    > Why inheritance is needed? (Code reuseability, parent has no access of child class)
+    > What gets inherited? - Constructor, Non private attributes, Non private methods
+    > What does not get inherited? - Private attributes, Private methods, Static methods
+    > Types of Inheritance - Single, Multiple, Multilevel, Hierarchical, Hybrid
+    > Constructor overriding vs method overloading
+    > Super Keyword( can be used only inside class, can not access variables/attributes, used only inside child class)
